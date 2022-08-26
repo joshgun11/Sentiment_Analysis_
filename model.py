@@ -15,7 +15,7 @@ class KModel():
 
     def baseline_model(self,embedding_dim ,embedding_matrix,num_classes,maxlen,vocab_size):
     
-        metric = tf.keras.metrics.CategoricalAccuracy('accuracy')
+        
         model = Sequential()
         model.add(layers.Embedding(vocab_size,embedding_dim,weights = [embedding_matrix],
                            input_length=maxlen,trainable = True))
