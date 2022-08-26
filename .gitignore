@@ -13,7 +13,7 @@ checkpoints/*
 checkpoint/*
 ,/*
 glove.6B.50d.txt
-*.ipynb
+
 
 work_env
 *DS_Store*
