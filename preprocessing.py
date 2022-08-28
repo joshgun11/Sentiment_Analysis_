@@ -43,6 +43,8 @@ class PreProcess():
         le = preprocessing.LabelEncoder()
 
         le.fit(y_train)
+        le_name_mapping = dict(zip(le.classes_, le.transform(le.classes_)))
+        print(le_name_mapping)
         y_train_enc = le.transform(y_train)
         y_test_enc = le.transform(y_test)
         y_train_enc = tf.one_hot(y_train_enc, args.num_classes) 

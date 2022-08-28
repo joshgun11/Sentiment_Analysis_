@@ -22,7 +22,7 @@ class KTrain():
     def __init__(self):
         return
     
-    def compile_and_fit_model(self, model, x_train, y_train,x_test,y_test,optimizer, epochs, batch_size,save_model,loss='categorical_crossentropy',
+    def compile_and_fit_model(self, model, x_train, y_train,x_test,y_test,optimizer, epochs, batch_size,save_model,loss,
     metrics=(["accuracy"]),verbose=1,output_dir='/tmp'):
      
 
