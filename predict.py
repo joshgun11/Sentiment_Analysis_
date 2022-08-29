@@ -40,7 +40,7 @@ class Predict():
    
         classes  = {'0':'Irrelevant', '1':'Negative', '2':'Neutral', '3':'Positive'}
         actual_class = classes[str(predicted_class[0])]
-        return print(actual_class)
+        return actual_class
 
 
 if __name__ == '__main__':
@@ -48,5 +48,6 @@ if __name__ == '__main__':
     parser = KParseArgs()
     args = parser.parse_args()
     flag = len(sys.argv) == 1
-    Predict().predict(args)
+    result = Predict().predict(args)
+    print(result)
 
